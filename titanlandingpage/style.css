@@ -9,16 +9,15 @@
     --bg-color: #646464;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 65%;
-    background-color: var(--bg-color);
-}
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 h1 {
@@ -45,18 +44,28 @@ nav ul {
 }
 nav ul li {
     list-style-type: none;
+    color: var(--bg-color);
+}
+
+a {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--text);
 }
 
 a:link {
     text-decoration: none; 
-    color: var(--alt-text);
+}
+
+a:hover {
+    color: var(--accent); 
 }
 
 /* Hero section */
 .hero {
     display: flex;
     min-height: 90vh;
-    background-image: url('/img/crossfit.jpg');
+    background-image: linear-gradient(rgba(255, 249, 75, 0.2), rgba(0, 0, 0, 0.2)), url('/img/crossfit.jpg');
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -116,24 +125,26 @@ a:link {
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    font-size: 1.2rem;
 }
 
 .intro-info h2 {
     font-size: 1.5rem;
     color: var(--sec-color);
-    padding: 1rem 1rem;
+    margin: 5px 5px;
 }
 
 .intro-info p {
-    margin: 10px 10px;
-    color: var(--alt-text);
+    margin: 5px 5px;
+    color: var(--text);
 }
 
 .intro-info ul li {
     font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
     font-weight: bold;
+    list-style-type: none;
 }
 
 /* train */
@@ -142,14 +153,13 @@ a:link {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    height: fit-content;
 }
 
 .train h3 {
     color: var(--pri-color);
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -178,3 +188,38 @@ a:link {
     color: var(--text);
 }
 /*Subscribe*/
+.email {
+    min-height: 2rem;
+    background-color: var(--pri-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px;
+    background: var(--sec-color);
+    border: none;
+
+    color: var(--alt-text);
+}
+
+input {
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333;
+    color: #ffe947;
+    font-size: 0.8rem;
+    height: 2rem;
+}
