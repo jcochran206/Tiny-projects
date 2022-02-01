@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:wght@300&family=Roboto+Slab&display=swap');
+
+:root {
+    --pri-color: #ffe947;
+    --sec-color: #185adb;
+    --accent: #66de93;
+    --alt-text: #fff;
+    --text: #333;
+    --bg-color: #646464;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65%;
+    background-color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    color: var(--text);
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: var(--text)
+
+}
+
+/* Header */
+nav ul {
+    display: flex;
+    min-height: 10vh;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none; 
+    color: var(--alt-text);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    min-height: 90vh;
+    background-image: url('/img/crossfit.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-info h2{
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    color: var(--alt-text);
+    padding: 20px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.hero-info button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background: var(--pri-color);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--text);
+}
+
+.hero-info button:hover{
+    color: var(--sec-color); 
+}
+
+/*Intro section*/
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.intro-img{
+    flex: 1 1 20rem;
+}
+
+.intro-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro-info {
+   flex: 1 1 20rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 1.2rem;
+}
+
+.intro-info h2 {
+    font-size: 1.5rem;
+    color: var(--sec-color);
+    padding: 1rem 1rem;
+}
+
+.intro-info p {
+    margin: 10px 10px;
+    color: var(--alt-text);
+}
+
+.intro-info ul li {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* train */
+.train {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    height: fit-content;
+}
+
+.train h3 {
+    color: var(--pri-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.train-img {
+    flex: 1 1 20rem;
+}
+
+.train-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.train-text {
+    flex: 1 1 20rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.train button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background: var(--pri-color);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--text);
+}
+/*Subscribe*/
