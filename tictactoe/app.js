@@ -95,7 +95,7 @@ const playerHasWon = () => {
 
 const reset = () => {
     spaces.forEach((space, index)=>{
-        space[index] =null
+        spaces[index] =null
     })
     boxes.forEach(box => {
         box.innerText = '';
