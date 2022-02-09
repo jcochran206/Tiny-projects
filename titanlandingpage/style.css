@@ -65,7 +65,7 @@ a:hover {
 .hero {
     display: flex;
     min-height: 90vh;
-    background-image: linear-gradient(rgba(255, 249, 75, 0.2), rgba(0, 0, 0, 0.2)), url('/img/crossfit.jpg');
+    background-image: linear-gradient(rgba(255, 249, 75, 0.2), rgba(0, 0, 0, 0.2)), url('img/crossfit.jpg');
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -203,7 +203,6 @@ a:hover {
     padding: 7px;
     background: var(--sec-color);
     border: none;
-
     color: var(--alt-text);
 }
 
